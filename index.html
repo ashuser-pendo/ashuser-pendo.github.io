@@ -14,7 +14,6 @@
                 // Please use Strings, Numbers, or Bools for value types.
                 const urlParams = new URLSearchParams(window.location.search);
                 const visitorId = urlParams.get('visitorId');
-                pendo.apiKey = apiKey;
                 pendo.initialize({
                     visitor: {
                         id:              visitorId || 'anon'   // Required if user is logged in
@@ -34,7 +33,8 @@
 
                         // You can add any additional account level key-values here,
                         // as long as it's not one of the above reserved names.
-                    }
+                    },
+                    apiKey: '3f08954a-3b50-46f2-7ac7-fd6df2587532'
                 });
             })('3f08954a-3b50-46f2-7ac7-fd6df2587532');
         </script>
