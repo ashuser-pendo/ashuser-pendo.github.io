@@ -15,7 +15,7 @@
                 window.addEventListener('DOMContentLoaded', () => {
                     const urlParams = new URLSearchParams(window.location.search);
                     const visitorId = urlParams.get('visitorId');
-
+                    pendo.apiKey = apiKey;
                     pendo.initialize({
                         visitor: {
                             id:              visitorId || 'anon'   // Required if user is logged in
