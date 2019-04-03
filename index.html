@@ -12,31 +12,29 @@
 
                 // Call this whenever information about your visitors becomes available
                 // Please use Strings, Numbers, or Bools for value types.
-                window.addEventListener('DOMContentLoaded', () => {
-                    const urlParams = new URLSearchParams(window.location.search);
-                    const visitorId = urlParams.get('visitorId');
-                    pendo.apiKey = apiKey;
-                    pendo.initialize({
-                        visitor: {
-                            id:              visitorId || 'anon'   // Required if user is logged in
-                            // email:        // Optional
-                            // role:         // Optional
+                const urlParams = new URLSearchParams(window.location.search);
+                const visitorId = urlParams.get('visitorId');
+                pendo.apiKey = apiKey;
+                pendo.initialize({
+                    visitor: {
+                        id:              visitorId || 'anon'   // Required if user is logged in
+                        // email:        // Optional
+                        // role:         // Optional
 
-                            // You can add any additional visitor level key-values here,
-                            // as long as it's not one of the above reserved names.
-                        },
+                        // You can add any additional visitor level key-values here,
+                        // as long as it's not one of the above reserved names.
+                    },
 
-                        account: {
-                            id:           'account' // Highly recommended
-                            // name:         // Optional
-                            // planLevel:    // Optional
-                            // planPrice:    // Optional
-                            // creationDate: // Optional
+                    account: {
+                        id:           'account' // Highly recommended
+                        // name:         // Optional
+                        // planLevel:    // Optional
+                        // planPrice:    // Optional
+                        // creationDate: // Optional
 
-                            // You can add any additional account level key-values here,
-                            // as long as it's not one of the above reserved names.
-                        }
-                    });
+                        // You can add any additional account level key-values here,
+                        // as long as it's not one of the above reserved names.
+                    }
                 });
             })('3f08954a-3b50-46f2-7ac7-fd6df2587532');
         </script>
