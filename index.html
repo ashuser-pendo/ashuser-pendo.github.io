@@ -16,7 +16,8 @@
                 const visitorId = urlParams.get('visitorId');
                 pendo.initialize({
                     visitor: {
-                        id:              visitorId || 'anon'   // Required if user is logged in
+                        id:              visitorId || 'anon',   // Required if user is logged in
+                        email: 'ashuser@pendo.io'
                         // email:        // Optional
                         // role:         // Optional
 
