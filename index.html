@@ -44,6 +44,15 @@
         <link href="styles/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+        <script>
+            function applyResetCss () {
+                const resetCss = document.createElement('link');
+                resetCss.href = 'styles/reset.css';
+                resetCss.rel = 'stylesheet';
+                resetCss.type = 'text/css';
+                document.head.appendChild(resetCss);
+            }
+        </script>
         <div class="nav">
             <div>Some Text</div>
             <div class="nav-sticker">Nav Sticker</div>
@@ -53,6 +62,9 @@
             <div class="sticker">Div 2</div>
             <div class="sticker">Div 3</div>
             <div class="sticker">Div 4</div>
+        </div>
+        <div class="modifier-buttons">
+            <button class="reset-css" onclick="applyResetCss">Add Reset CSS</button>
         </div>
         <div>
             The bottom of the page
