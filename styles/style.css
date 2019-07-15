@@ -46,3 +46,12 @@
     color: rgb(3, 206, 241);
     z-index: 99999999;
 }
+
+.modal {
+    display: none;
+    border: 2px solid black;
+    box-shadow: 5px 5px black;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
