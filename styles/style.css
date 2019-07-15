@@ -54,4 +54,6 @@
     position: absolute;
     top: 50px;
     left: 100px;
+    background: white;
+    z-index: 999999999;
 }
