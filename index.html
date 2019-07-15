@@ -59,7 +59,7 @@
 
             function openModal () {
                 var frame = document.createElement('iframe');
-                frame.className = 'modal-iframe';
+                frame.id = 'modal-iframe';
                 frame.src = 'modal/index.html';
                 var modal = document.getElementById('modal');
                 modal.appendChild(frame);
