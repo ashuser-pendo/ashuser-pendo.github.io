@@ -47,7 +47,7 @@
     z-index: 99999999;
 }
 
-.modal {
+#modal {
     display: none;
     border: 2px solid black;
     box-shadow: 5px 5px black;
