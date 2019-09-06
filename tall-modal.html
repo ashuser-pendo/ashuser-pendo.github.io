@@ -45,69 +45,10 @@
             })('3f08954a-3b50-46f2-7ac7-fd6df2587532');
         </script>
         <link href="styles/style.css" rel="stylesheet" type="text/css">
-        <link href="styles/reset.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <script>
-            function applyResetCss () {
-                var resetCss = document.createElement('link');
-                resetCss.href = 'styles/reset.css';
-                resetCss.rel = 'stylesheet';
-                resetCss.type = 'text/css';
-                document.head.appendChild(resetCss);
-            }
-
-            function openModal () {
-                var frame = document.createElement('iframe');
-                frame.id = 'modal-iframe';
-                frame.src = 'modal/index.html';
-                var modal = document.getElementById('modal');
-                modal.appendChild(frame);
-                modal.style['display'] = 'block';
-            }
-
-            function closeModal () {
-                var frame = document.getElementById('modal-iframe');
-                var modal = document.getElementById('modal');
-                modal.style['display'] = 'none';
-                modal.removeChild(frame);
-            }
-
-            function closeModalWithUrlChange () {
-                var frame = document.getElementById('modal-iframe');
-                var modal = document.getElementById('modal');
-                modal.style['display'] = 'none';
-                frame.src = 'modal/page2.html';
-                modal.removeChild(frame);
-            }
-        </script>
-        <div class="nav">
-            <div>Some Text</div>
-            <div class="nav-sticker">Nav Sticker</div>
-        </div>
-        <div class="button-row">
-            <button href='/tall-modal'>Tall Centered Modal page</button>
-        </div>
-        <div class="content">
-            <div class="sticker">Div 1</div>
-            <div class="sticker">Div 2</div>
-            <div class="sticker">Div 3</div>
-            <div class="sticker">Div 4</div>
-            <button class="iframe-button" onclick="openModal()">THE IFRAME MODAL</button>
-        </div>
-        <div class="modifier-buttons">
-            <button class="reset-css" onclick="applyResetCss()">Add Reset CSS</button>
-        </div>
-        <div>
-            The bottom of the page
-        </div>
-        <div class="floating-badge">
-            Badge!
-        </div>
-        <div id="modal">
-            <div> Some text!</div>
-            <button onclick="closeModal()">Close this bad boy modal</button>
-            <button onclick="closeModalWithUrlChange()">Close this bad boy modal w/ url change</button>
+        <div class="tall-modal">
+            I'm a little modal short and stout
         </div>
     </body>
 </html>

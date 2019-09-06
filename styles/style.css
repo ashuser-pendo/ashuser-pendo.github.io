@@ -4,6 +4,18 @@
     padding-bottom: 2000px;
 }
 
+.button-row {
+    margin-top: 100px;
+}
+
+.tall-modal {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
 .sticker {
     padding: 10px;
     margin: 5px;
