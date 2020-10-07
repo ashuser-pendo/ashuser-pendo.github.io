@@ -1,11 +1,10 @@
+body {
+    padding-top: 100px;
+}
 
 .content {
     margin-top: 100px;
     padding-bottom: 2000px;
-}
-
-.button-row {
-    margin-top: 100px;
 }
 
 .tall-modal {
